@@ -65,4 +65,4 @@ CT-UBUNTU12.0.4
 
 FPQY3-DHHHJ-XGWRK-TW8KY-3GFX6
 
-<pre><code>Test</code></pre>
+<pre>Test</pre>
