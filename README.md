@@ -4,10 +4,10 @@ Commandes pour ProxMox
 
 
 # Création d'un container 
-pct create 101 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --hostname ct-web01 --storage local-lvm --net0 name=eth0,bridge=vmbr0,ip=dhcp
+<code>pct create 101 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --hostname ct-web01 --storage local-lvm --net0 name=eth0,bridge=vmbr0,ip=dhcp</code>
 
 # Demmarrer un container
-pct start 101
+<code>pct start 101</code>
 
 # Entrer en mode console
 pct enter 102
