@@ -1,4 +1,4 @@
-# ProjectMOB la team des Hackers SIIC !
+﻿# ProjectMOB la team des Hackers SIIC !
 
 Commandes pour ProxMox
 
@@ -63,5 +63,3 @@ CT-UBUNTU12.0.4
 # Key Windows XP
 
 FPQY3-DHHHJ-XGWRK-TW8KY-3GFX6
-
-test
