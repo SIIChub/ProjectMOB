@@ -7,39 +7,39 @@ Commandes pour ProxMox
 <pre><code>pct create 101 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --hostname ct-web01 --storage local-lvm --net0 name=eth0,bridge=vmbr0,ip=dhcp</code></pre>
 
 # Demmarrer un container
-<code>pct start 101</code>
+<pre><code>pct start 101</code></pre>
 
 # Entrer en mode console
-pct enter 102
+<pre><code>pct enter 102</code></pre>
 
-# Lister les pct et qm
-pct list  FREE WORLD 
-qm list   WORLD
+# Lister les containers (pct) et les vm (qm)
+<pre><code>pct list</code></pre>
+<pre><code>qm list</code></pre>
 
 # Création d'un snapshot  
-vzdump 105 --mode snapshot
+<pre><code>vzdump 105 --mode snapshot</code></pre>
 
 # Restauration d'un snapshot
-pct restore 106 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --storage local-lvm 
+<pre><code>pct restore 106 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --storage local-lvm </code></pre>
 
 # Mettre à jour les templates disponibles
-pveam update
+<pre><code>pveam update</code></pre>
 
 # Lister la liste des templates disponible
-pveam available
+<pre><code>pveam available</code></pre>
 
 # Lister la liste des templates 
-pveam list local
+<pre><code>pveam list local</code></pre>
 
 # Ajouter des templates
-* **debian** pveam download local debian-8.0-standard_8.0-1_amd64.tar.gz
-* **ubuntu** pveam download local ubuntu-12.04-standard_12.04-1_amd64.tar.gz
+* **debian** <pre><code>pveam download local debian-8.0-standard_8.0-1_amd64.tar.gz</code></pre>
+* **ubuntu** <pre><code>pveam download local ubuntu-12.04-standard_12.04-1_amd64.tar.gz</code></pre>
 
 # Création VM avec XP
-qm create 103 --cdrom /var/lib/vz/template/iso/fr_windows_xp_pro.iso --memory 512 --ostype wxp --storage local-lvm --kvm 0 --name VM-XP --bootdisk ide0 --onboot no --sockets 1 --ide0 local-lvm:10 --net0 rtl8139,bridge=vmbr0
+<pre><code>qm create 103 --cdrom /var/lib/vz/template/iso/fr_windows_xp_pro.iso --memory 512 --ostype wxp --storage local-lvm --kvm 0 --name VM-XP --bootdisk ide0 --onboot no --sockets 1 --ide0 local-lvm:10 --net0 rtl8139,bridge=vmbr0</code></pre>
 
 # Destruction d'un VM
-qm destroy 103
+<pre><code>qm destroy 103</code></pre>
 
 
 # A Faire 
@@ -63,6 +63,4 @@ CT-UBUNTU12.0.4
 
 # Key Windows XP
 
-FPQY3-DHHHJ-XGWRK-TW8KY-3GFX6
-
-<pre>Test</pre>
+<code>FPQY3-DHHHJ-XGWRK-TW8KY-3GFX6</code>
