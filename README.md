@@ -65,4 +65,4 @@ CT-UBUNTU12.0.4
 
 <code>FPQY3-DHHHJ-XGWRK-TW8KY-3GFX6</code>
 
-!https://gigaom.com/wp-content/uploads/sites/1/2013/07/hacker-cyber-attack-640x522.jpg!
+<img src"https://gigaom.com/wp-content/uploads/sites/1/2013/07/hacker-cyber-attack-640x522.jpg"/>
