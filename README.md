@@ -32,8 +32,8 @@ pveam available
 pveam list local
 
 # Ajouter des templates
-pveam download local debian-8.0-standard_8.0-1_amd64.tar.gz
-pveam download local ubuntu-12.04-standard_12.04-1_amd64.tar.gz
+* **debian** pveam download local debian-8.0-standard_8.0-1_amd64.tar.gz
+* **ubuntu** pveam download local ubuntu-12.04-standard_12.04-1_amd64.tar.gz
 
 # Création VM avec XP
 qm create 103 --cdrom /var/lib/vz/template/iso/fr_windows_xp_pro.iso --memory 512 --ostype wxp --storage local-lvm --kvm 0 --name VM-XP --bootdisk ide0 --onboot no --sockets 1 --ide0 local-lvm:10 --net0 rtl8139,bridge=vmbr0
@@ -42,16 +42,17 @@ qm create 103 --cdrom /var/lib/vz/template/iso/fr_windows_xp_pro.iso --memory 51
 qm destroy 103
 
 
-A Faire 
+# A Faire 
+
 CT-WEB01
--APACHE2
--PHPMYADMIN
--MYSQL
--ssH
+* APACHE2
+* PHPMYADMIN
+* MYSQL
+* SSH
 
 CT-FTP
--proftpd
--ssh
+* proftpd
+* SSH
 
 VM-WINXP
 
