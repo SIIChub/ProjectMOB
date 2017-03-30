@@ -1,13 +1,8 @@
-# ProjectMOB la team des Hackers SIIC !
-
-Commandes pour ProxMox
-
-
 Container -------------------
-# CrÃ©ation d'un container 
+# Création d'un container 
 pct create 101 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --hostname ct-web01 --storage local-lvm --net0 name=eth0,bridge=vmbr0,ip=dhcp
 
-# DemmarrÃ© un container
+# Demmarré un container
 pct start 101
 
 # Entrer en mode console
@@ -19,7 +14,7 @@ qm list   WORLD
 Container -------------------
 
 Sauvegarde ------------------
-# CrÃ©ation d'une snapshot  
+# Création d'une snapshot  
 vzdump 105 --mode snapshot
 Sauvegarde ------------------
 
@@ -29,7 +24,7 @@ pct restore 106 local:vztmpl/debian-6.0-standard_6.0-7_amd64.tar.gz --storage lo
 Restauration ----------------
 
 Template --------------------
-# Mettre Ã  jour les templates disponibles
+# Mettre à jour les templates disponibles
 pveam update
 
 # Lister la liste des templates disponible
@@ -44,7 +39,7 @@ pveam download local ubuntu-12.04-standard_12.04-1_amd64.tar.gz    # ubuntu-12
 
 Template --------------------
 
-# CrÃ©ation VM avec XP
+# Création VM avec XP
 qm create 103 --cdrom /var/lib/vz/template/iso/fr_windows_xp_pro.iso --memory 512 --ostype wxp --storage local-lvm --kvm 0 --name VM-XP --bootdisk ide0 --onboot no --sockets 1 --ide0 local-lvm:10 --net0 rtl8139,bridge=vmbr0
 
 # Destruction d'un VM
